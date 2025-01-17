@@ -20,8 +20,6 @@ if uploaded_file:
     st.write(filtered_df)
 
     st.subheader("Plot the data:")
-    #x = st.selectbox("Please select a column to plot against date:", options=iterable_columns)
-    #y = df['']
     data_to_plot = st.multiselect(f"Please select a column to plot\
                                  against date for the city of {selected_unique_value}:", \
                                     options=iterable_columns)
